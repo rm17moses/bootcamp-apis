@@ -1,8 +1,8 @@
 ###
-GET http://localhost:4007/api/word_game
+GET https://bootcamp-api-0ebr.onrender.com/api/word_game
 
 ###
-POST http://localhost:4007/api/word_game
+POST https://bootcamp-api-0ebr.onrender.com/api/word_game
 Content-Type: application/json
 
 {
@@ -10,7 +10,7 @@ Content-Type: application/json
 }
 ### Phone Bill Total
 
-POST http://localhost:4007/api/phonebill/total
+POST https://bootcamp-api-0ebr.onrender.com/api/phonebill/total
 Content-Type: application/json
 
 {
@@ -18,11 +18,11 @@ Content-Type: application/json
 }
 
 ### Phone Bill Prices
-GET http://localhost:4007/api/phonebill/prices?call=call,call&sms=sms,sms
+GET http://localhost:4007/api/phonebill/prices?call=call&sms=sms
 
 ### Phone Bill Price
 
-POST http://localhost:4007/api/phonebill/price
+POST https://bootcamp-api-0ebr.onrender.com/api/phonebill/price
 Content-Type: application/json
 
 {
@@ -31,7 +31,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:4007/api/enough
+POST https://bootcamp-api-0ebr.onrender.com/api/enough
 Content-Type: application/json
 
 {
