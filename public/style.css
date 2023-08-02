@@ -1,0 +1,39 @@
+[x-cloak] { display: none; }
+
+body {
+    background-color: thistle;
+}
+
+em{
+    font-size: 14px;
+}
+
+.stats{
+    font-size: 14px;
+}
+
+.sum{
+    font-size: 17px;
+    text-decoration-line: underline;
+    color: gold;
+}
+
+.sen {
+    font-size: 17px;
+}
+
+.totalMess {
+    background-color: chartreuse;
+    width: 50px;
+}
+
+.costs {
+    background-color: chartreuse;
+}
+
+.btn-message {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* background-color: aqua; */
+}
+

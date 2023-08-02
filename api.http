@@ -1,0 +1,40 @@
+###
+GET http://localhost:4007/api/word_game
+
+###
+POST http://localhost:4007/api/word_game
+Content-Type: application/json
+
+{
+    "sentence": "I am Moses Moletsane"
+}
+### Phone Bill Total
+
+POST http://localhost:4007/api/phonebill/total
+Content-Type: application/json
+
+{
+    "callSMS": "call,sms"
+}
+
+### Phone Bill Prices
+GET http://localhost:4007/api/phonebill/prices?call=call,call&sms=sms,sms
+
+### Phone Bill Price
+
+POST http://localhost:4007/api/phonebill/price
+Content-Type: application/json
+
+{
+  "type" : "call",
+  "price" : 2.75
+}
+
+###
+POST http://localhost:4007/api/enough
+Content-Type: application/json
+
+{
+  "cost": "call,sms,call",
+   "airtime" : 54
+}
