@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="total-phonebill.css">
+
+    <title>Total Phone Bill</title>
+</head>
+
+<body class="container pt-2 pb-2" x-data="bootcampFunctionsAPI" x-cloak>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><b>Moses</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="word-game.html">Word Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="total-phonebill.html">Total Phone Bill</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="change-prices.html">Change Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="enough-airtime.html">Enough Airtime</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+          <!-- TOTAL PHONE BILL API -->
+
+    <h1 class="text-center mt-3">Total Phone Bill</h1>
+    <div class="text-center">
+        <div x-show="!open">
+            <button class="btn btn-info bg-gradient fw-bold btn-sm" x-on:click="open = !open">Show Original
+                Prices</button>
+        </div>
+        <div x-show="open">
+            <button class="btn btn-info bg-gradient fw-bold btn-sm mb-2" x-on:click="open = !open">Hide Original
+                Prices</button>
+            <p><span>Call cost:</span> <b><span class="fw-bold rounded bg-warning ps-2 me-5 pe-2"
+                        x-text="defaultCall"></span></b>
+                <span>SMS cost:</span> <b><span class="fw-bold rounded bg-warning ps-2 pe-2"
+                        x-text="defaultSMS"></span></b>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="text-center">
+        <p class="mt-2"><span class="fw-bold">Phone Bill Cost: </span><span
+                class="totalMess bg-gradient rounded fw-bold ps-5 pe-5 ms-3" x-text="total"></span></p>
+    </div>
+
+    <div class="">
+        <input type="text" class="form-control mt-2 fw-bold" x-model="bill" placeholder="...">
+    </div>
+    <div class="row text-center">
+        <div class="">
+            <button class="btn btn-primary btn-sm fw-bold mt-2" x-on:click="billCost()">Calculate Phone Bill</button>
+
+        </div>
+    </div>
+
+    <div class="text center">
+    </div>
+
+
+
+ 
+
+    <!-- END OF TOTAL PHONE BILL WIDGET -->
+    </body>
+    </html>

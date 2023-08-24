@@ -63,7 +63,7 @@ document.addEventListener('alpine:init', () => {
                         setTimeout(() => {
                             this.senMessage = '';
                             this.message = '';
-                        }, 7000)
+                        }, 3000)
                     })
             },
 

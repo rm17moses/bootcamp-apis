@@ -1,0 +1,66 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #333333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Page Content Styles */
+
+h1 {
+    font-size: 36px;
+    margin-top: 40px;
+}
+
+
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+
+/* Responsive Styles */
+/* @media (max-width: 767px) {
+    .navbar-nav .nav-item {
+        margin-right: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+} */

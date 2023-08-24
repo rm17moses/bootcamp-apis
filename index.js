@@ -24,7 +24,7 @@ app.get('/api/word_game', function(req, res) {
 
     res.json({
 
-        message : 'Analysing Sentence. Please Wait...', 
+        message : 'Analysis complete', 
        "longestWord" : longestWord(sentence),
        "shortestWord": shortestWord(sentence),
         "sum" : wordLengths(sentence)
@@ -78,6 +78,8 @@ app.post('/api/phonebill/price', function(req, res) {
       message: `The ${type} price is set to R${price}`,
     });
   });
+
+  // ENOUGH AIRTIME
   
 app.post('/api/enough', function(req, res) {
   const cost = req.body.cost;
